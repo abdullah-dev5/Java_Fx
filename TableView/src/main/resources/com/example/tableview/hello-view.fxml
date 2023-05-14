@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tableview.ProductController">
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="product" layoutX="8.0" layoutY="82.0" promptText="Product" />
+            <TextField fx:id="code" layoutX="8.0" layoutY="138.0" promptText="QR Code" />
+            <TextField fx:id="Pin" layoutX="15.0" layoutY="188.0" promptText="price in" />
+            <TextField fx:id="Pout" layoutX="23.0" layoutY="252.0" promptText="Price out" />
+            <Button fx:id="save" layoutX="83.0" layoutY="301.0" mnemonicParsing="false" onAction="#onHelloButtonClick" text="Save" />
+            <TableView fx:id="tableview" layoutX="184.0" layoutY="82.0" prefHeight="200.0" prefWidth="316.0">
+              <columns>
+                <TableColumn fx:id="productColumn" prefWidth="75.0" text="product" />
+                <TableColumn fx:id="codeColumn" prefWidth="75.0" text="QR Ciode" />
+                  <TableColumn fx:id="priceInColumn" prefWidth="75.0" text="price in" />
+                  <TableColumn fx:id="priceOutColumn" prefWidth="75.0" text="price out " />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
